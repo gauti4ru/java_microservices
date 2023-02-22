@@ -1,0 +1,9 @@
+server:
+  port: 8484
+  ssl:
+    key-alias: 1
+    key-store: src/main/resources/server_cert.p12
+    key-store-password: password
+    key-password: password
+    key-store-type: pkcs12
+    enabled: true
