@@ -21,5 +21,5 @@ public class UserData {
 
     @Id
     @Column(name = "aadharcard")
-    private Integer aadharcard;
+    private Long aadharcard;
 }
