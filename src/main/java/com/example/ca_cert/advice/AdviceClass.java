@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @ControllerAdvice
 public class AdviceClass {
 @ExceptionHandler
-    public ResponseEntity<String> ControllerAdvice(AppException appException)
+    public ResponseEntity<String> controllerAdvice(AppException appException)
     {
         return new ResponseEntity<>(appException.getMessage(), HttpStatus.CONFLICT);
     }
