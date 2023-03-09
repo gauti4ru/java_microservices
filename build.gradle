@@ -34,7 +34,7 @@ tasks.named('test') {
 
 task customFatJar(type: Jar) {
     manifest {
-        attributes 'Main-Class': 'com.example.ca_cert.CaCertApplication'
+        attributes  'Main-Class': 'com.example.ca_cert.CaCertApplication'
     }
     baseName = 'all-in-one-jar'
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
