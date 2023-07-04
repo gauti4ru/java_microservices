@@ -8,16 +8,25 @@ server:
     key-store-type: pkcs12
     enabled: true
 
-
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/UserInfoDataBase
+    url: jdbc:mysql://localhost:3308/UserInfoDataBase
     username: root
-    password: my-secret-pw
+    password: PASSWORD
     driver-class-name: com.mysql.cj.jdbc.Driver
-
 
   jpa:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5Dialect
+  cloud:
+    config:
+      enabled: false
+  application:
+    name: ca-cert
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8085/eureka
