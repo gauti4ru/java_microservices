@@ -1,10 +1,8 @@
 server:
   port: 8087
-  address: 0.0.0.0
+
 
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-
-
