@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: equal-experts-vibrant-courteous-magnanimous-concern-2c0338d1cfc7
+price:
+  api:
+    uri: https://equalexperts.github.io/
+productItems: "{cheerios: 100, cornflakes: 300, frosties: 200, shreddies: 100, weetabix: 200}"
+taxRate: 12.5
+
+
+
+
